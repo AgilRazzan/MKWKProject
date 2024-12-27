@@ -63,3 +63,7 @@ border-radius: 1000px;
         margin: 0 1rem;
     }
 }
+/* Index Event Special */
+.know-more:hover{
+    color:#222222;
+}
