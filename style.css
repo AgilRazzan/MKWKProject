@@ -96,53 +96,65 @@
         margin: 0 auto; /* Center gambar dalam kolom */
       }
 /* footer */
+/* Footer Styles */
 .footer {
-  padding: 2rem 0;
-  padding-bottom: 1rem;
+  background-color: #f8f9fa;
 }
 
 .company-image {
   max-width: 200px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.company-image:hover {
+  transform: scale(1.05);
 }
 
 .footer-links a {
-  font-size: 20px;
+  font-size: 1.1rem;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+}
+
+.footer-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #333;
+  transition: width 0.3s ease;
 }
 
 .footer-links a:hover {
-  color: #4d4a4a;
-  font-weight: bold;
-  transition: 0.3s;
+  color: #000 !important;
+  font-weight: 600;
 }
 
-.social-links a {
-  color: var(--primary-text);
-  margin-right: 1rem;
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
+.footer-links a:hover::after {
+  width: 100%;
 }
 
-.social-links a:hover {
-  color: #666;
+.quote-box {
+  background-color: #f1f1f1;
+  border-left: 4px solid #333;
+  transition: transform 0.3s ease;
 }
 
-.btn-custom {
-  background-color: var(--button-bg);
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+.quote-box:hover {
+  transform: translateY(-5px);
 }
 
-.btn-custom:hover {
-  background-color: #2a2424;
-  color: white;
-}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer-links a {
+      font-size: 1rem;
+  }
 /* setting responsive */
 @media (max-width: 768px) {
     h1 {
