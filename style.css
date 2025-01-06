@@ -11,25 +11,60 @@
 .brownc1{
     background-color: #222222;
 }
-
-/* Tambahan */
-.navbar{
-width: 1338px;
-height: 65px;
-left: calc(50% - 1338px/2);
-/* top: 29px; */
-background: #FEFEFE;
-box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
-border-radius: 1000px;
-}
+/* CSS Halaman 1 */
+        /* Navbar */
+.navbar {
+    background: #FEFEFE;
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 1000px;
+  }
+  
+  /* Responsive adjustments */
+  @media (min-width: 992px) {
+    .navbar {
+      width: min(90%, 1338px);
+      height: 65px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    /* Memastikan menu tengah tidak terpengaruh logo dan profile */
+    #navbarNav {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: auto;
+    }
+  }
+  
+  @media (max-width: 991.98px) {
+    .navbar {
+      width: 90%;
+      height:auto;
+      border-radius: 50px;
+      margin: 1rem auto;
+    }
+    
+    .navbar-collapse {
+      background: #FEFEFE;
+      padding: 1rem;
+      border-radius: 15px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+      margin-top: 1rem;
+    }
+    
+    .navbar-nav {
+      text-align: center;
+    }
+  }
 .buttontop:hover{
     color: #EDEDEE;
 }
 
-
+        /* css image menara */
 .menara {
     min-height: 80vh;
-    background: url(menara165.png);
+    background: url(Image/menara165.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -48,6 +83,66 @@ border-radius: 1000px;
     border-radius: 34px;
 }
 
+    /* image Carousel */
+    .carousel {
+        max-width: 800px; /* Mengatur lebar maksimum carousel */
+        margin: 0 auto; /* Membuat carousel center */
+      }
+      
+      .carousel-image {
+        height: 400px; /* Tinggi yang diminta */
+        width: 200px; /* Lebar yang diminta */
+        object-fit: cover; /* Memastikan gambar menutupi area dengan proporsi yang tepat */
+        margin: 0 auto; /* Center gambar dalam kolom */
+      }
+/* footer */
+.footer {
+  padding: 2rem 0;
+  padding-bottom: 1rem;
+}
+
+.company-image {
+  max-width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.footer-links a {
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #4d4a4a;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.social-links a {
+  color: var(--primary-text);
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #666;
+}
+
+.btn-custom {
+  background-color: var(--button-bg);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #2a2424;
+  color: white;
+}
 /* setting responsive */
 @media (max-width: 768px) {
     h1 {
@@ -67,3 +162,5 @@ border-radius: 1000px;
 .know-more:hover{
     color:#222222;
 }
+
+
