@@ -1,0 +1,26 @@
+:root {
+    --brown-dark: #8b7355;
+    --brown-light: #d2b48c;
+  }
+
+  .card {
+    transition: transform 0.3s ease;
+    border: none;
+    background-color: #dfdbd6;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(139, 115, 85, 0.2);
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .brown-text {
+    color: var(--brown-dark);
+  }
