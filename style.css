@@ -9,7 +9,7 @@
     color: #222222;
 }
 .brownc1{
-    background-color: #222222;
+    background-color: #2d2d2d;
 }
 /* CSS Halaman 1 */
         /* Navbar */
@@ -18,7 +18,13 @@
     box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
     border-radius: 1000px;
   }
-  
+.navbar a .btn{
+transition: 0.3s;
+}
+.navbar a .btn:hover{
+  background-color: #2d2d2d;
+  translate: translateY(-2px);
+}
   /* Responsive adjustments */
   @media (min-width: 992px) {
     .navbar {
@@ -28,7 +34,7 @@
       margin-right: auto;
     }
     
-    /* Memastikan menu tengah tidak terpengaruh logo dan profile */
+  
     #navbarNav {
       position: absolute;
       left: 50%;
@@ -57,9 +63,6 @@
       text-align: center;
     }
   }
-.buttontop:hover{
-    color: #EDEDEE;
-}
 
         /* css image menara */
 .menara {
@@ -82,21 +85,11 @@
     background-color: #222222CC;
     border-radius: 34px;
 }
+.text-justify {
+    text-align: justify;
+}
 
-    /* image Carousel */
-    .carousel {
-        max-width: 800px; /* Mengatur lebar maksimum carousel */
-        margin: 0 auto; /* Membuat carousel center */
-      }
-      
-      .carousel-image {
-        height: 400px; /* Tinggi yang diminta */
-        width: 200px; /* Lebar yang diminta */
-        object-fit: cover; /* Memastikan gambar menutupi area dengan proporsi yang tepat */
-        margin: 0 auto; /* Center gambar dalam kolom */
-      }
 /* footer */
-/* Footer Styles */
 .footer {
   background-color: #f8f9fa;
 }
@@ -115,9 +108,8 @@
 .footer-links a {
   font-size: 1.1rem;
   text-decoration: none;
-  transition: all 0.3s ease;
-  display: inline-block;
   position: relative;
+  transition: color 0.3s, font-weight 0.3s, width 0.3s ease;
 }
 
 .footer-links a::after {
@@ -132,7 +124,7 @@
 }
 
 .footer-links a:hover {
-  color: #000 !important;
+  color: #000;
   font-weight: 600;
 }
 

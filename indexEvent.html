@@ -13,144 +13,303 @@
     />
     <!--Css Style  -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="eventStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body id="event" class="brownc">
-  <!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary mt-3 fixed-top mx-auto">
-  <div class="container-fluid px-4">
-    <a class="navbar-brand order-0">EDUCATION PROJECT</a>
-    <!-- Hamburger menu -->
-    <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-  </button>
-    <!-- Nav tengah -->
-    <div class="collapse navbar-collapse order-2" id="navbarNav">
-      <ul class="navbar-nav text-center mx-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="indexEvent.html">Event</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="indexteamGallery.html">Team</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-        <!-- button mobile -->
-        <li class="nav-item d-lg-none mt-2">
-          <a class="nav-link rounded-5 px-3" href="index.html">Home</a>
-        </li>
-      </ul>
-    </div>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary mt-3 fixed-top mx-auto"
+    >
+      <div class="container-fluid px-4">
+        <a class="navbar-brand order-0">EDUCATION PROJECT</a>
+        <!-- Hamburger menu -->
+        <button
+          class="navbar-toggler order-1"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Nav tengah -->
+        <div class="collapse navbar-collapse order-2" id="navbarNav">
+          <ul class="navbar-nav text-center mx-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="indexEvent.html"
+                >Event</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="indexteamGallery.html">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <!-- button mobile -->
+            <li class="nav-item d-lg-none mt-2">
+              <a class="nav-link rounded-5 px-3" href="index.html">Home</a>
+            </li>
+          </ul>
+        </div>
 
-    <!-- button desktop -->
-    <div class="d-none d-lg-block order-3">
-      <a class="btn brownf brownc1 rounded-5 px-4" href="index.html">Home</a>
-    </div>
-  </div>
-</nav>
-<!-- Akhir Navbar -->
-
-
-    <!-- Halaman pertama -->
-
-    <div class="row vh-100">
-      <div class="col-12 col-lg-6   d-flex align-items-center">
-        <!-- Changed col-6 to col-12 col-lg-6 -->
-        <div class="px-3 px-lg-5">
-          <!-- Added responsive padding -->
-          <h1
-            class="text-dark text-start mt-5 mt-md-0"
-            style="font-size: clamp(2.5rem, 5vw, 3.75rem)"
+        <!-- button desktop -->
+        <div class="d-none d-lg-block order-3">
+          <a class="btn brownf brownc1 rounded-5 px-4" href="index.html"
+            >Home</a
           >
-            <!-- Responsive font size -->
-            Edukasi Pemahaman <br />
-            Sumber Ajaran Islam <br />
-            Melalui Kisah-kisah Nabi
-          </h1>
-          <div class="container">
-            <a
-              class="know-more btn text-light brownc1 rounded-pill"
-              href="index.html"
-              role="button"
-              >Know More</a
-            >
-          </div>
         </div>
       </div>
-      <div
-        class="col-12 col-lg-6 d-flex align-items-center justify-content-center"
-      >
-        <!-- Adjusted columns -->
-        <img
-          class="img-fluid rounded-3"
-          src="Image/event1.JPG"
-          alt="our Event"
-        />
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-bg"></div>
+      <div class="container hero-content">
+        <h1 class="hero-title">
+          Edukasi Pemahaman <br />
+          Sumber Ajaran Islam <br />
+          Melalui Kisah-kisah Nabi
+        </h1>
+        <p class="hero-subtitle">
+          Selamat Datang, kami telah menyiapkan website ini sebagai kemudahan
+          bagi anda untuk mengakses <br />
+          informasi tentang project MKWK kelompok 3, Mari cari tahu lebih
+          banyak!!
+        </p>
+        <button class="btn cta-button rounded-5">
+          <a href="#intro-section" class="text-reset text-decoration-none"
+            >Scroll Down</a
+          >
+        </button>
       </div>
-    </div>
+    </section>
 
-    <!-- Halaman Kedua -->
-    <div class="container-fluid bg-light">
-      <div class="row min-vh-100">
-        <!-- Headline - Full width on all screens, centered -->
-        <div class="col-12 text-center mb-5 mt-5 pt-5">
-          <h1 class="fw-bold">DESKRIPSI KEGIATAN</h1>
-        </div>
-
-        <!-- Content Row -->
-        <div class="row justify-content-between align-items-center">
-          <!-- Image Section - 4 columns on desktop, full width on mobile -->
-          <div class="col-12 col-lg-4">
-            <img src="Image/event4.png" width="400px" alt="Our Event2" class="img-fluid rounded-5 ms-md-5"  />
+    <!-- Introduction Section -->
+    <section class="intro-section" id="intro-section">
+      <div class="container mx-auto mt-3 mt-lg-5">
+        <h2 class="section-title">DESKRIPSI KEGIATAN</h2>
+        <div class="row align-items-center">
+          <div class="col-md-5">
+            <img
+              src="Image/eventPage2.jpg"
+              alt="Introduction"
+              class="img-fluid intro-image"
+              width="350px"
+            />
           </div>
-          <!-- Text Section - 8 columns on desktop, full width on mobile -->
-          <div class="col-12 col-lg-8 mb-4 mb-lg-0">
-            <p class="text-justify">
+          <div class="col-md-6 mt-1 mt-lg-4 text-justify">
+            <p style="text-indent: 3em">
               Kegiatan ini adalah Bakti sosial berupa edukasi kepada anak-anak
               di TPA Raudhotul Jannah dengan rentang umur 5-12 tahun, kegiatan
               ini bertujuan untuk mengenalkan ajaran Islam kepada anak-anak usia
               dini melalui pendekatan yang menyenangkan dan edukatif. Dengan
               menggunakan kisah-kisah inspiratif para Nabi, anak-anak diajak
               untuk belajar nilai-nilai kebaikan, seperti kejujuran, kesabaran,
-              dan rasa syukur.
+              dan rasa syukur. Anak-anak usia dini adalah masa emas perkembangan
+              anak, di mana nilai-nilai moral dan spiritual dapat tertanam
+              dengan kuat. Dalam dunia yang semakin modern, penting bagi
+              anak-anak untuk memahami ajaran Islam secara menyenangkan agar
+              mereka tumbuh dengan akhlak mulia dan fondasi keimanan yang kokoh.
+              Menggunakan kisah Nabi sebagai media pembelajaran membantu
+              anak-anak memahami nilai-nilai kejujuran, kesabaran, dan
+              keberanian melalui cerita yang mudah dipahami.
             </p>
           </div>
         </div>
+        <div class="row align-items-center">
+          <div class="col-md-6 mt-1 mt-lg-4 text-justify">
+            <p style="text-indent: 3em; line-height: 1.6">
+              Acara ini diselenggrakan oleh Kelompok 3 MKWK(Mata Kuliah Wajib
+              Kampus) sebagai syarat penilain Asessment 1. Tim kami terdiri dari
+              16 orang dengan pembagian tugas yang telah diatur sedemikian rupa
+              demi berjalnnya acara dengan lancar. Kegiatan ini dilaksanakan
+              pada hari Jum'at, 8 November 2024, bertempat di Masjid TPA
+              Roudhotul Jannah berada di dalam lingkungan komplek marinir, di
+              dalam komplek Rumah Sakit Marinir Cilandak Timur, Jakarta Selatan.
+              Waktu Kegiatan dilaksanakan setelah sholat maghrib sekitar pukul
+              18.30 hingga setelah isya' sekitar pukul 20.30. Kegiatan ini
+              dilaksanakan dengan interaksi yang disesuaikan dengan anak-anak
+              usia dini, melalui perantara penyampaian kisah nabi Muhammad SAW,
+              Nabi Ibrahim As, Nabi . demi tercapainya hasil yang maksimal kami
+              menggunakan alat bantu berupa 1 buah Proyektor dan 1 buah Speaker
+              yang kami pinjam dari Bagian Fasilitas kampus.
+            </p>
+          </div>
+          <div
+            class="col-md-6 d-flex justify-content-center align-items-center"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251.40490368823313!2d106.81051139698485!3d-6.305919143518698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ef007e614e5d%3A0x22b12381811b1c5d!2sMushola%20Nurul%20Muttaqin!5e1!3m2!1sid!2sid!4v1736244053413!5m2!1sid!2sid"
+              class="rounded-4 intro-image"
+              width="350px"
+              height="566px"
+              style="border: 2"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
       </div>
-    </div>
-    <!-- Akhir Halaman Kedua -->
-    <!-- Halaman Ketiga -->
-    <div class="container-fluid bg-light">
-      <div class="row min-vh-100">
+    </section>
 
-        <!-- Content Row -->
-        <div class="row justify-content-between align-items-center">
-          
-          <!-- Text Section - 8 columns on desktop, full width on mobile -->
-          <div class="col-12 col-lg-6 mb-4 mb-lg-0 ms-5">
-            <p class="text-justify">
-              Anak-anak usia dini adalah masa emas perkembangan anak, di mana
-              nilai-nilai moral dan spiritual dapat tertanam dengan kuat. Dalam
-              dunia yang semakin modern, penting bagi anak-anak untuk memahami
-              ajaran Islam secara menyenangkan agar mereka tumbuh dengan akhlak
-              mulia dan fondasi keimanan yang kokoh. Menggunakan kisah Nabi
-              sebagai media pembelajaran membantu anak-anak memahami nilai-nilai
-              kejujuran, kesabaran, dan keberanian melalui cerita yang mudah
-              dipahami.
-            </p>
+    <!-- Services Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <h2 class="section-title">Inovasi pembelajaran</h2>
+          <div class="col-md-4">
+            <div class="service-card">
+              <h3 class="h5 mb-3">Kisah Nabi-nabi</h3>
+              <p class="text-justify">
+                Penyampaian materi kepada anak-anak usia dini tentu saja
+                berbeda, oleh karena itu kelompok kami menggunakan kisah nabi
+                nabi sebagai metode penyampaian yang lebih mudah dimengerti, karena disampaikan dengan cara story telling yang tidak membosankan.
+              </p>
+            </div>
           </div>
-          <!-- Image Section - 4 columns on desktop, full width on mobile -->
-          <div class="col-12 col-lg-4">
-            <img src="" alt="Our Event2" class="img-fluid rounded" />
+          <div class="col-md-4">
+            <div class="service-card">
+              <h3 class="h5 mb-3">Penyampaian Visual</h3>
+              <p>
+                Selain menggunakan kisah nabi-nabi, kami juga menggunakan metode penyampaian visual berupa proyektor yang memudahkan anak-anak dalam memahami cerita yang disampaikan dan pemeragaan langsung yang dilakukan oleh tim kami, sebagai upaya pendalaman materi.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-card">
+              <h3 class="h5 mb-3">Kegiatan Interaktif</h3>
+              <p>
+                Kami juga menyelenggarakan kegiatan interaktif yang melibatkan anak-anak berupa permainan-permainan dukatif yang diselipkan nilai-nilai kebaikan didalamnya agar anak-anak tidak merasa bosan dan tetap fokus dalam kegiatan.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Akhir Halaman Ketiga -->
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+      <div class="container">
+        <h2 class="section-title">Evaluasi & Perbaikan</h2>
+        <div class="text-center">
+          <p class="lead">Testimonials or client/customer reviews</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer border-top border-5 border-secondary" id="footer">
+      <div class="container py-5">
+        <div class="row align-items-center gy-4">
+          <div class="col-md-3">
+            <img
+              src="Image/logo UAG.png"
+              alt="University Logo"
+              class="company-image img-fluid"
+            />
+          </div>
+          <div class="col-md-3">
+            <h5 class="mb-3 fw-semibold">Universitas Ary Ginanjar</h5>
+            <div class="footer-links">
+              <p class="mb-2">
+                <a
+                  href="https://www.instagram.com/uag.university/"
+                  class="link-dark"
+                >
+                  <i class="fab fa-instagram me-2"></i>Instagram
+                </a>
+              </p>
+              <p class="mb-2">
+                <a
+                  href="https://www.tiktok.com/@uag.university"
+                  class="link-dark"
+                >
+                  <i class="fab fa-tiktok me-2"></i>TikTok
+                </a>
+              </p>
+              <p class="mb-2">
+                <a
+                  href="https://www.youtube.com/@uag.university"
+                  class="link-dark"
+                >
+                  <i class="fab fa-youtube me-2"></i>YouTube
+                </a>
+              </p>
+              <p class="mb-2">
+                <a href="https://uag.ac.id/" class="link-dark">
+                  <i class="fas fa-globe me-2"></i>Website
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h5 class="mb-3 fw-semibold">Let's Connect with Me</h5>
+            <div class="footer-links">
+              <p class="mb-2">
+                <a href="https://github.com/AgilRazzan" class="link-dark">
+                  <i class="fab fa-github me-2"></i>Github
+                </a>
+              </p>
+              <p class="mb-2">
+                <a
+                  href="https://www.instagram.com/agil_razzan/"
+                  class="link-dark"
+                >
+                  <i class="fab fa-instagram me-2"></i>Instagram
+                </a>
+              </p>
+              <p class="mb-2">
+                <a
+                  href="mailto:agil.razzan@students.uag.ac.id"
+                  class="link-dark"
+                >
+                  <i class="fas fa-envelope me-2"></i>Email
+                </a>
+              </p>
+              <p class="mb-2">
+                <a href="https://wa.me/+6285183019260" class="link-dark">
+                  <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="quote-box p-3 rounded">
+              <p class="fs-6 fw-bold text-center mb-0 fst-italic">
+                "No man can win every battle, but no man should fall without a
+                struggle"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-bar bg-dark text-white py-3 mt-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <p class="mb-0">&copy; 2024 Agil Razzan. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Akhir footer -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
